@@ -5,8 +5,7 @@ from bs4 import BeautifulSoup as bs
 import splinter 
 import pandas as pd
 import pymongo
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 def init_browser():
     # @NOTE: Replace the path with your actual path to the chromedriver
