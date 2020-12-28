@@ -7,10 +7,9 @@ import pandas as pd
 import pymongo
 
 
-def init_browser():
-    # @NOTE: Replace the path with your actual path to the chromedriver
-    executable_path = {"executable_path": "chromedriver.exe"}
-    return Browser("chrome", **executable_path, headless=False)
+# Running Chromedriver
+executable_path = {'executable_path' : 'chromedriver.exe'}
+browser = splinter.Browser('chrome', **executable_path)
 
 def scrape():
     browser = init_browser()
